@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blad.official</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            }
+
+            body {
+                background-color: #014421;
+                color: #f2f2f2;
+                min-height: 100vh;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 40px;
+                background-color: white;
+                border-bottom: 1px solid #ccc;
+                border-radius: 30px;
+                margin: 20px;
+            }
+
+            .logo {
+                font-weight: 700;
+                font-size: 20px;
+                color: #333;
+            }
+
+            .logo span {
+                color: #014421;
+            }
+
+            nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #333;
+                font-weight: 500;
+            }
+
+            .buttons a {
+                margin-left: 15px;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 20px;
+                font-weight: bold;
+            }
+
+            .login {
+                color: #333;
+            }
+
+            .start {
+                background-color: #014421;
+                color: white;
+                cursor: pointer;
+                transition: opacity 0.8;
+            }
+            .start:hover{
+                opacity: 0.8;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 60px 20px 30px 20px;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 48px;
+                font-weight: 800;
+                color: white;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                color: #e0e0e0;
+                margin-bottom: 40px;
+                max-width: 500px;
+            }
+
+            .product-grid {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                padding: 40px 20px;
+                flex-wrap: wrap;
+            }
+
+            .product-card {
+                background-color: white;
+                color: #333;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                width: 1800px;
+                padding: 30px;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+            }
+            
+            .product-card img {
+                width: 600px;
+                height: 600px;
+                border-radius: 8px;
+                object-fit: cover;
+                margin-bottom: 15px;
+            }
+
+            .product-card h3 {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .product-card .price {
+                font-weight: bold;
+                color: #014421;
+                margin-bottom: 5px;
+            }
+
+            .product-card .size {
+                font-size: 14px;
+                margin-bottom: 15px;
+                color: #555;
+            }
+
+            .buy-button {
+                background-color: #014421;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 20px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.3s;
+            }
+
+            .buy-button:hover {
+                background-color: #012f18;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Blad.<span>official</span></div>
+            <nav>
+                <a>Home</a>
+                <a >Shop</a>
+                <a>Contact</a>
+            </nav>
+            <div class="buttons">
+                <a class="login" >Login</a>
+                <a class="start" >Cart</a>
+            </div>
+        </header>
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="produk1.webp">
+                <span>
+                    <h3>Wash hoodie Boxy - Blad.official</h3>
+                    <p class="price">Rp 899.000</p>
+                    <p class="size">Size: S M L XL</p>
+                    <button href="" class="buy-button">Buy</button>
+                </span>
+            </div>
+        </section>
+    </body>
+</html>
